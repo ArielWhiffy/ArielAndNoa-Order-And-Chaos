@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: e82b7f54bca84c94cb7d5887eb32450d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - particlePrefab: {fileID: 6373670348141182624, guid: aa483bd577c5b6f489e8386a73651253, type: 3}
+  - introImage: {fileID: 2800000, guid: af2d627ef35203a429e55e4328387a1c, type: 3}
+  - realWorld2DPrefab: {instanceID: 0}
+  - player2DPrefab: {instanceID: 0}
+  - playerSpawnPoint: {instanceID: 0}
+  - audioSource: {instanceID: 0}
+  - explosionSound: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
