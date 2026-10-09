@@ -1081,11 +1081,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8ef0079a0d1b97409c845a4116bb076, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!212 &1334059211 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 386373953206813945, guid: 986d345c13b0f3b4fa94483266bea92e, type: 3}
-  m_PrefabInstance: {fileID: 7201894729773061104}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1498270708 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 313600817441329474, guid: 8dd9c545ca0b5ef45af8495a40e30be4, type: 3}
@@ -6725,14 +6720,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1539547442529050787, guid: 986d345c13b0f3b4fa94483266bea92e, type: 3}
-      propertyPath: groundOffset
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1539547442529050787, guid: 986d345c13b0f3b4fa94483266bea92e, type: 3}
-      propertyPath: spriteRenderer
-      value: 
-      objectReference: {fileID: 1334059211}
-    - target: {fileID: 1539547442529050787, guid: 986d345c13b0f3b4fa94483266bea92e, type: 3}
       propertyPath: spawnPointUpper
       value: 
       objectReference: {fileID: 1643353672}
@@ -6742,11 +6729,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8717890188996200460, guid: 986d345c13b0f3b4fa94483266bea92e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.66
+      value: -9.41
       objectReference: {fileID: 0}
     - target: {fileID: 8717890188996200460, guid: 986d345c13b0f3b4fa94483266bea92e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.13
+      value: -3.38
       objectReference: {fileID: 0}
     - target: {fileID: 8717890188996200460, guid: 986d345c13b0f3b4fa94483266bea92e, type: 3}
       propertyPath: m_LocalPosition.z
