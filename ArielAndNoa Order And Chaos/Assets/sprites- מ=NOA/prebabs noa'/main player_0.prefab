@@ -127,10 +127,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 3344207808035390881}
   rb: {fileID: 2043244384329573718}
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 386373953206813945}
   moveSpeed: 5
+  jumpHeight: 2.5
+  jumpDuration: 0.5
   spawnPointUpper: {fileID: 0}
   groundY: -3.5
+  groundOffset: 1.5
 --- !u!50 &2043244384329573718
 Rigidbody2D:
   serializedVersion: 5
