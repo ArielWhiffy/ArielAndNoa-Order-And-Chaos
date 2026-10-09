@@ -1,0 +1,624 @@
+fileFormatVersion: 2
+guid: 2e8a0568f59eddf4d8f3fb703527b3cf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6706096497103763496
+    second: assents main player_0
+  - first:
+      213: 5598042858106791777
+    second: assents main player_1
+  - first:
+      213: 5842352240524107861
+    second: assents main player_2
+  - first:
+      213: 5354279307641299539
+    second: assents main player_3
+  - first:
+      213: 5258304743225653076
+    second: assents main player_4
+  - first:
+      213: 841237401284408009
+    second: assents main player_5
+  - first:
+      213: -5695879697753407943
+    second: assents main player_6
+  - first:
+      213: 4649851665308526301
+    second: assents main player_7
+  - first:
+      213: -7621468561318759304
+    second: assents main player_8
+  - first:
+      213: -1937302670523174209
+    second: assents main player_9
+  - first:
+      213: 2795389691947979806
+    second: assents main player_10
+  - first:
+      213: -4598894257190898515
+    second: assents main player_11
+  - first:
+      213: -2370487052910216921
+    second: assents main player_12
+  - first:
+      213: 2960641791156018494
+    second: assents main player_13
+  - first:
+      213: -2515858619998946355
+    second: assents main player_14
+  - first:
+      213: 8181764471292443175
+    second: assents main player_15
+  - first:
+      213: -1834360500099496030
+    second: assents main player_16
+  - first:
+      213: 7744650697471362628
+    second: assents main player_17
+  - first:
+      213: 1031651142627936776
+    second: assents main player_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 50
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: assents main player_0
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 627
+        width: 34
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8287c53db37d01d50800000000000000
+      internalID: 6706096497103763496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assents main player_1
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 627
+        width: 45
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1672edad15e30bd40800000000000000
+      internalID: 5598042858106791777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assents main player_2
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 625
+        width: 45
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 550a52d9864341150800000000000000
+      internalID: 5842352240524107861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assents main player_3
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 627
+        width: 31
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3522f2089a83e4a40800000000000000
+      internalID: 5354279307641299539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assents main player_4
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 622
+        width: 50
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45777b4ed4049f840800000000000000
+      internalID: 5258304743225653076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assents main player_5
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 620
+        width: 48
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c2745b95fcacab00800000000000000
+      internalID: 841237401284408009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assents main player_6
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 490
+        width: 60
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93e7c0cc79b24f0b0800000000000000
+      internalID: -5695879697753407943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assents main player_7
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 496
+        width: 65
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd629f02477978040800000000000000
+      internalID: 4649851665308526301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assents main player_8
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 497
+        width: 94
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 874b9c749ba1b3690800000000000000
+      internalID: -7621468561318759304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assents main player_9
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 497
+        width: 73
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb2fc054c715d15e0800000000000000
+      internalID: -1937302670523174209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assents main player_10
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 501
+        width: 63
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e14195d3d183bc620800000000000000
+      internalID: 2795389691947979806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assents main player_11
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 199
+        width: 87
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da47d800a027d20c0800000000000000
+      internalID: -4598894257190898515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assents main player_12
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 204
+        width: 70
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 729bf92b5965a1fd0800000000000000
+      internalID: -2370487052910216921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assents main player_13
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 220
+        width: 71
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3dd70dd500561920800000000000000
+      internalID: 2960641791156018494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assents main player_14
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 206
+        width: 75
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcbbbd92aefd51dd0800000000000000
+      internalID: -2515858619998946355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assents main player_15
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 44
+        width: 47
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72a3c4310777b8170800000000000000
+      internalID: 8181764471292443175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assents main player_16
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 48
+        width: 55
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a7cf8118da0b86e0800000000000000
+      internalID: -1834360500099496030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assents main player_17
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 51
+        width: 69
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4460344c6c68a7b60800000000000000
+      internalID: 7744650697471362628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assents main player_18
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 42
+        width: 75
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80ac6709f39215e00800000000000000
+      internalID: 1031651142627936776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      assents main player_0: 6706096497103763496
+      assents main player_1: 5598042858106791777
+      assents main player_10: 2795389691947979806
+      assents main player_11: -4598894257190898515
+      assents main player_12: -2370487052910216921
+      assents main player_13: 2960641791156018494
+      assents main player_14: -2515858619998946355
+      assents main player_15: 8181764471292443175
+      assents main player_16: -1834360500099496030
+      assents main player_17: 7744650697471362628
+      assents main player_18: 1031651142627936776
+      assents main player_2: 5842352240524107861
+      assents main player_3: 5354279307641299539
+      assents main player_4: 5258304743225653076
+      assents main player_5: 841237401284408009
+      assents main player_6: -5695879697753407943
+      assents main player_7: 4649851665308526301
+      assents main player_8: -7621468561318759304
+      assents main player_9: -1937302670523174209
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
