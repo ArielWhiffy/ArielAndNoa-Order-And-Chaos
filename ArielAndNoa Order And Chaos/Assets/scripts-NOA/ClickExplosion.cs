@@ -16,8 +16,16 @@ public class ClickExplosion : MonoBehaviour
     public GameObject groundObject;     // הרצפה שתופיע לאחר 5 קליקים
     public maincaracter playerCharacter; // חיבור לשחקן (maincaracter)
 
+    [Header("הגדרות מעקב מצלמה")]
+    public float cameraSmoothSpeed = 5f;
+
+    // גובה קבוע למצלמה בציר Y (ניתן לשנות ל-0f או לערך שלילי אם עדיין גבוה)
+    [SerializeField] private float fixedCameraY = 0f;
+
     private int clickCount = 0;
     private bool galaxyActivated = false;
+    private bool isCameraFollowing = false; // דגל להפעלת מעקב המצלמה
+    private GameObject backgroundStarsObject; // שמירת רפרנס לכוכבים שנבנו
 
     void Start()
     {
@@ -72,6 +80,26 @@ public class ClickExplosion : MonoBehaviour
         }
     }
 
+    void LateUpdate()
+    {
+        // מעקב רך של המצלמה אחר השחקן בלבד
+        if (isCameraFollowing && playerCharacter != null && mainCamera != null)
+        {
+            // מעקב אחר ציר X ו-Z של השחקן בלבד, תוך נעילת ציר Y לגובה קבוע
+            Vector3 targetPosition = new Vector3(
+                playerCharacter.transform.position.x,
+                fixedCameraY,
+                playerCharacter.transform.position.z - 10f
+            );
+
+            mainCamera.transform.position = Vector3.Lerp(
+                mainCamera.transform.position,
+                targetPosition,
+                cameraSmoothSpeed * Time.deltaTime
+            );
+        }
+    }
+
     IEnumerator TransitionToGalaxy()
     {
         // א. הפסקת המוזיקה בהדרגה (Fade Out)
@@ -89,7 +117,7 @@ public class ClickExplosion : MonoBehaviour
         // ד. הקטנת השמש והזזתה לצד המסך
         float screenHeight = mainCamera.orthographicSize;
         float screenWidth = screenHeight * mainCamera.aspect;
-        Vector3 targetPosition = new Vector3(screenWidth - 1.8f, screenHeight - 1.8f, 0f);
+        Vector3 targetPosition = new Vector3(screenWidth * 1.8f, screenHeight * 1.8f, 0f);
         Vector3 targetScale = Vector3.one * 0.6f;
 
         if (sunObject != null)
@@ -125,6 +153,35 @@ public class ClickExplosion : MonoBehaviour
                 playerCharacter.StartFallingEntry(groundYPos);
             }
         }
+
+        // ו. השהייה בזמן הנפילה של השחקן
+        yield return new WaitForSeconds(2.0f);
+
+        // ז. היעלמות הדרגתית של הכוכבים (Fade Out)
+        if (backgroundStarsObject != null)
+        {
+            ParticleSystem ps = backgroundStarsObject.GetComponent<ParticleSystem>();
+            if (ps != null)
+            {
+                float fadeDuration = 2f;
+                float elapsedFade = 0f;
+                var mainModule = ps.main;
+                Color initialColor = mainModule.startColor.color;
+
+                while (elapsedFade < fadeDuration)
+                {
+                    elapsedFade += Time.deltaTime;
+                    float alpha = Mathf.Lerp(1f, 0f, elapsedFade / fadeDuration);
+                    mainModule.startColor = new Color(initialColor.r, initialColor.g, initialColor.b, alpha);
+                    yield return null;
+                }
+
+                Destroy(backgroundStarsObject);
+            }
+        }
+
+        // ח. הפעלת מעקב המצלמה
+        isCameraFollowing = true;
     }
 
     IEnumerator FadeOutMusic(float fadeDuration)
@@ -143,10 +200,10 @@ public class ClickExplosion : MonoBehaviour
 
     void CreateScreenFullOfTwinklingStars()
     {
-        GameObject backgroundStars = new GameObject("BackgroundTwinklingStars");
-        backgroundStars.transform.position = new Vector3(0, 0, 5f);
+        backgroundStarsObject = new GameObject("BackgroundTwinklingStars");
+        backgroundStarsObject.transform.position = new Vector3(0, 0, 5f);
 
-        ParticleSystem ps = backgroundStars.AddComponent<ParticleSystem>();
+        ParticleSystem ps = backgroundStarsObject.AddComponent<ParticleSystem>();
 
         var main = ps.main;
         main.playOnAwake = false;
