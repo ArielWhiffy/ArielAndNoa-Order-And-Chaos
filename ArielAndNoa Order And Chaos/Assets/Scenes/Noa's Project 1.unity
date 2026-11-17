@@ -561,6 +561,8 @@ MonoBehaviour:
   backgroundMusic: {fileID: 1055737747}
   groundObject: {fileID: 1718445468}
   playerCharacter: {fileID: 1334059209}
+  cameraSmoothSpeed: 5
+  fixedCameraY: 0
 --- !u!1001 &529470051
 PrefabInstance:
   m_ObjectHideFlags: 0

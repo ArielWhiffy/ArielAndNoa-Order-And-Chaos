@@ -7,32 +7,29 @@ public class ClickExplosion : MonoBehaviour
 
     [Header("הגדרות השמש והמעבר")]
     public Camera mainCamera;
-    public GameObject sunObject; // השמש והכוכבים המסתובבים סביבה
+    public GameObject sunObject;
     public int totalClicksToGalaxy = 5;
 
     [Header("הגדרות גלקסיה ומוזיקה")]
     public Color galaxyBackgroundColor = new Color(0.01f, 0.01f, 0.05f);
-    public AudioSource backgroundMusic;  // השמע של המוזיקה שנעצרת
-    public GameObject groundObject;     // הרצפה שתופיע לאחר 5 קליקים
-    public maincaracter playerCharacter; // חיבור לשחקן (maincaracter)
+    public AudioSource backgroundMusic;
+    public GameObject groundObject;
+    public maincaracter playerCharacter;
 
     [Header("הגדרות מעקב מצלמה")]
     public float cameraSmoothSpeed = 5f;
-
-    // גובה קבוע למצלמה בציר Y (ניתן לשנות ל-0f או לערך שלילי אם עדיין גבוה)
     [SerializeField] private float fixedCameraY = 0f;
 
     private int clickCount = 0;
     private bool galaxyActivated = false;
-    private bool isCameraFollowing = false; // דגל להפעלת מעקב המצלמה
-    private GameObject backgroundStarsObject; // שמירת רפרנס לכוכבים שנבנו
+    private bool isCameraFollowing = false;
+    private GameObject backgroundStarsObject;
 
     void Start()
     {
         if (mainCamera == null)
             mainCamera = Camera.main;
 
-        // עצירת הפעלה אוטומטית של חלקיקי הפיצוץ
         if (explosionParticles != null)
         {
             var main = explosionParticles.main;
@@ -44,7 +41,6 @@ public class ClickExplosion : MonoBehaviour
             explosionParticles.Stop();
         }
 
-        // וידוא שהרצפה מוסתרת בתחילת המשחק
         if (groundObject != null)
         {
             groundObject.SetActive(false);
@@ -55,10 +51,8 @@ public class ClickExplosion : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            // פועל רק אם עדיין לא הגענו לגלקסיה
             if (!galaxyActivated)
             {
-                // 1. מיקום הפיצוץ בדיוק בנקודת הלחיצה
                 Vector3 mousePos = Input.mousePosition;
                 mousePos.z = 10f;
                 Vector3 worldPos = mainCamera.ScreenToWorldPoint(mousePos);
@@ -66,10 +60,9 @@ public class ClickExplosion : MonoBehaviour
                 if (explosionParticles != null)
                 {
                     explosionParticles.transform.position = worldPos;
-                    explosionParticles.Emit(20); // פולט 20 חלקיקים בלחיצה בלבד
+                    explosionParticles.Emit(20);
                 }
 
-                // 2. ספירת לחיצות
                 clickCount++;
                 if (clickCount >= totalClicksToGalaxy)
                 {
@@ -82,10 +75,8 @@ public class ClickExplosion : MonoBehaviour
 
     void LateUpdate()
     {
-        // מעקב רך של המצלמה אחר השחקן בלבד
         if (isCameraFollowing && playerCharacter != null && mainCamera != null)
         {
-            // מעקב אחר ציר X ו-Z של השחקן בלבד, תוך נעילת ציר Y לגובה קבוע
             Vector3 targetPosition = new Vector3(
                 playerCharacter.transform.position.x,
                 fixedCameraY,
@@ -102,19 +93,14 @@ public class ClickExplosion : MonoBehaviour
 
     IEnumerator TransitionToGalaxy()
     {
-        // א. הפסקת המוזיקה בהדרגה (Fade Out)
         if (backgroundMusic != null)
         {
             StartCoroutine(FadeOutMusic(1.5f));
         }
 
-        // ב. שינוי צבע הרקע
         mainCamera.backgroundColor = galaxyBackgroundColor;
-
-        // ג. יצירת כוכבים מנצנצים ברקע
         CreateScreenFullOfTwinklingStars();
 
-        // ד. הקטנת השמש והזזתה לצד המסך
         float screenHeight = mainCamera.orthographicSize;
         float screenWidth = screenHeight * mainCamera.aspect;
         Vector3 targetPosition = new Vector3(screenWidth * 1.8f, screenHeight * 1.8f, 0f);
@@ -141,23 +127,19 @@ public class ClickExplosion : MonoBehaviour
             }
         }
 
-        // ה. הופעת הרצפה והפעלת נפילת השחקן
         if (groundObject != null)
         {
             groundObject.SetActive(true);
 
             if (playerCharacter != null)
             {
-                // מעביר את גובה הרצפה המדויק לשחקן
                 float groundYPos = groundObject.transform.position.y;
                 playerCharacter.StartFallingEntry(groundYPos);
             }
         }
 
-        // ו. השהייה בזמן הנפילה של השחקן
         yield return new WaitForSeconds(2.0f);
 
-        // ז. היעלמות הדרגתית של הכוכבים (Fade Out)
         if (backgroundStarsObject != null)
         {
             ParticleSystem ps = backgroundStarsObject.GetComponent<ParticleSystem>();
@@ -180,7 +162,6 @@ public class ClickExplosion : MonoBehaviour
             }
         }
 
-        // ח. הפעלת מעקב המצלמה
         isCameraFollowing = true;
     }
 

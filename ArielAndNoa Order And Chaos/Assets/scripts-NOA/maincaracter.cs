@@ -7,6 +7,7 @@ public class maincaracter : MonoBehaviour
     public Animator animator;
     public Rigidbody2D rb;
     public SpriteRenderer spriteRenderer;
+    public bool hasKey = false;
 
     [Header("הגדרות תנועה וקפיצה")]
     public float moveSpeed = 5f;
