@@ -11,9 +11,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes-NOA/Noa's Project 1.unity
     guid: 514d133e86ae33e49b8b4e0808adc92a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes-NOA/level1.unity
     guid: d8826274340291b468eeac5e64cb393b
+  - enabled: 1
+    path: Assets/Scenes-NOA/level 1.unity
+    guid: 8d20d6cdd3971f74cb7db1faeb1f4d02
+  - enabled: 1
+    path: Assets/Scenes-NOA/DesertScene.unity
+    guid: 56665b6d4c052ba4d908bf49230339e6
+  - enabled: 1
+    path: Assets/Scenes-NOA/FrenchScene.unity
+    guid: 680c76afbb2265440ae42fab09d415f7
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

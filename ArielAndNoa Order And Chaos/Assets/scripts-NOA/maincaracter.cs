@@ -3,6 +3,10 @@ using System.Collections;
 
 public class maincaracter : MonoBehaviour
 {
+    [Header("מצב התחלה בסצנה")]
+    [Tooltip("סמן ב-V בסצנות רגילות שבהן השחקן מתחיל גלוי על הרצפה (בלי נפילה מהשמיים)")]
+    public bool startGroundedAndVisible = false;
+
     [Header("רכיבים")]
     public Animator animator;
     public Rigidbody2D rb;
@@ -35,9 +39,32 @@ public class maincaracter : MonoBehaviour
         if (spriteRenderer == null)
             spriteRenderer = GetComponent<SpriteRenderer>();
 
-        if (spriteRenderer != null)
+        if (startGroundedAndVisible)
         {
-            spriteRenderer.enabled = false;
+            // מצב התחלה רגיל (עבור הסצנה החדשה)
+            if (spriteRenderer != null)
+            {
+                spriteRenderer.enabled = true;
+                spriteRenderer.sortingOrder = 10;
+            }
+
+            isGrounded = true;
+            groundY = transform.position.y; // שומר את הגובה הנוכחי שבו מיקמת את השחקן כגובה הרצפה
+
+            if (animator != null)
+            {
+                animator.enabled = true;
+                animator.Play("walk");
+                animator.speed = 0f;
+            }
+        }
+        else
+        {
+            // מצב התחלה נסתר (עבור הסצנה הראשונה של השמש)
+            if (spriteRenderer != null)
+            {
+                spriteRenderer.enabled = false;
+            }
         }
     }
 

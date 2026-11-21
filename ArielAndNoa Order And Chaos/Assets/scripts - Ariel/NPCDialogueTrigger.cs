@@ -1,7 +1,7 @@
 using UnityEngine;
 using TMPro;
 
-public class NPCDialogueTrigger2D : MonoBehaviour
+public class NPCDialogueTrigger : MonoBehaviour
 {
     [Header("Dialogue Content")]
     [TextArea(2, 5)]
